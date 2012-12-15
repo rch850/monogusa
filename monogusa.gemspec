@@ -9,7 +9,8 @@ Gem::Specification.new do |s|
   s.email       = ["rich850@gmail.com"]
   s.homepage    = "https://github.com/rch850/monogusa"
   s.summary     = %q{AWS Resource Viewer for Monogusa.}
-  s.description = %q{AWS Resource Viewer for Monogusa.}
+  s.description = %q{AWS Resource Viewer for Monogusa.
+This gem installs 'monogusa' command that runs http server.}
 
   s.rubyforge_project = "monogusa"
 
