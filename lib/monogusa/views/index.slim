@@ -1,0 +1,16 @@
+a href="/logout" logout
+
+h2 Amazon EC2
+
+p You have following instances:
+ul
+- @ec2.instances.each do |i|
+  li #{i.id}
+
+h2 Amazon S3
+
+p You have following buckets:
+ul
+- @s3.buckets.each do |bucket|
+  li #{bucket.name}
+
