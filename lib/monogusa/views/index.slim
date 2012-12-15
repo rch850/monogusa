@@ -1,16 +1,26 @@
-a href="/logout" logout
-
-h2 Amazon EC2
+h2#EC2 Amazon EC2
 
 p You have following instances:
-ul
-- @ec2.instances.each do |i|
-  li #{i.id}
+table.table.table-striped
+  tr
+    th id
+    th status
+    th dns_name
+    th ip_address
+  - @ec2.instances.each do |i|
+    tr
+      td #{i.id}
+      td #{i.status}
+      td #{i.dns_name}
+      td #{i.ip_address}
 
-h2 Amazon S3
+h2#S3 Amazon S3
 
 p You have following buckets:
-ul
-- @s3.buckets.each do |bucket|
-  li #{bucket.name}
+table.table.table-striped
+  tr
+    th name
+  - @s3.buckets.each do |bucket|
+    tr
+      td #{bucket.name}
 
