@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.version     = Monogusa::VERSION
   s.authors     = ["rch850"]
   s.email       = ["rich850@gmail.com"]
-  s.homepage    = ""
+  s.homepage    = "https://github.com/rch850/monogusa"
   s.summary     = %q{AWS Resource Viewer for Monogusa.}
   s.description = %q{AWS Resource Viewer for Monogusa.}
 
