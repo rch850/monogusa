@@ -7,12 +7,15 @@ table.table.table-striped
     th status
     th dns_name
     th ip_address
-  - @ec2.instances.each do |i|
+  - @ec2.each do |ep, e|
     tr
-      td #{i.id}
-      td #{i.status}
-      td #{i.dns_name}
-      td #{i.ip_address}
+      th colspan="4" #{ep}
+    - e.instances.each do |i|
+      tr
+        td #{i.id}
+        td #{i.status}
+        td #{i.dns_name}
+        td #{i.ip_address}
 
 h2#S3 Amazon S3
 
